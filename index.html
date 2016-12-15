@@ -12,8 +12,8 @@
             <strong data-bind="text: framework">todo</strong>!
         </p>
 
-        <p>Language: <input data-bind="value: language" /></p>
-        <p>Framework: <input data-bind="value: framework" /></p>
+        <p>Language: <input data-bind="value: language, valueUpdate: 'afterkeydown'" /></p>
+        <p>Framework: <input data-bind="value: framework, valueUpdate: 'afterkeydown'" /></p>
 
         <script src="./externals/require.js"></script>
         <script src="./built/require-config.js"></script>
