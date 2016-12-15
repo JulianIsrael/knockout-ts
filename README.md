@@ -1,5 +1,5 @@
 # knockout-ts
 
   * `$ npm install`
-  * `$ npm run build`
+  * `$ npm start`
   * open index.html
