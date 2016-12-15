@@ -1,5 +1,6 @@
 (function (global) {
   System.config({
+    //baseURL: '/build',
     paths: {
       'npm:': 'node_modules/'
     },
@@ -13,6 +14,7 @@
         main: './main.js',
         defaultExtension: 'js'
       }
+      
     }
   });
 })(this);
