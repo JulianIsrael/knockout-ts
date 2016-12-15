@@ -1,28 +1,21 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hello Knockout!</title>
-    </head>
-    <body>
-        <p>
-            Hello from
-            <strong data-bind="text: language">todo</strong>
-            and
-            <strong data-bind="text: framework">todo</strong>!
-        </p>
+<head>
+  <title>Boilerplate ko-ts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+</head>
+<body>
+  <div id="app">
 
-        <p>Language: <input data-bind="value: language, valueUpdate: 'afterkeydown'" /></p>
-        <p>Framework: <input data-bind="value: framework, valueUpdate: 'afterkeydown'" /></p>
+    <!-- ko text: name --><!-- /ko -->
+    <div data-bind="text: counter"></div>
+    <button data-bind="click: increment">+</button>
+  </div>
+  <script>
+    System.import('app').catch(function(err){ console.error(err); });
+  </script>
+</body>
 
-        <br>
-
-        <button data-bind="click: buttonPressed">Press Me!</button>
-
-        <script src="./externals/require.js"></script>
-        <script src="./built/require-config.js"></script>
-        <script>
-            require(["built/index"]);
-        </script>
-    </body>
 </html>
