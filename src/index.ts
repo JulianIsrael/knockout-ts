@@ -13,7 +13,6 @@ class HelloViewModel {
         var btn = document.createElement('BUTTON');
         var text = document.createTextNode("I was added");
         btn.appendChild(text);
-
         document.body.appendChild(btn)
     }
 }
