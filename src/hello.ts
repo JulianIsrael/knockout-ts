@@ -10,7 +10,11 @@ class HelloViewModel {
     }
     
     public buttonPressed () {
-        alert('Bruh you pressed me!!');
+        var btn = document.createElement('BUTTON');
+        var text = document.createTextNode("I was added");
+        btn.appendChild(text);
+
+        document.body.appendChild(btn)
     }
 }
 
